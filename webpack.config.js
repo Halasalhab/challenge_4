@@ -1,7 +1,7 @@
 const path = require('path');
 var webpack = require('webpack');
 module.exports = {
-    entry: path.resolve(__dirname ,'/client/src/index.jsx'),
+    entry: path.resolve(__dirname ,'client','src','index.jsx'),
     module: {
       rules: [
         {
@@ -18,6 +18,6 @@ module.exports = {
     },
      output: {
       filename: 'bundle.js',
-      path:path.resolve(__dirname , '/client/dist')
+      path:path.resolve(__dirname , 'dist')
     }
   };
